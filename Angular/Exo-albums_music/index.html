@@ -6,16 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
     <title>Albums Music</title>
 </head>
 
 <body>
-    <ul>
-        <li><img src="img/fleetwood-mac.jpg" alt="fleetwood-mac"><br> Fleetwood-Mac</li>
-    </ul>
-
-    <script src="main.js"></script>
-
+    <div id="groupes">
+        <div class="albums">
+            <div class="blocImage">
+                <img src="img/David_Bowie.jpg" alt="">
+            </div>
+            <div class="blocTexte">
+                <p>Nom : Ziggy Stardust</p>
+                <p>Artiste : David Bowie</p>
+                <p>label : Sony</p>
+                <p>Annee Parution : 1975</p>
+                <p>Genre : Variété</p>
+                <p>Durée Totale : 180 minutes</p>
+                <button class="supprimer">Supprimer</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <form>
+        <label for="name">URL Image :</label>
+        <input type="text" name="image" id="url" />
+        <br> <br>
+        <label for="name">Nom :</label>
+        <input type="text" name="nom" id="Name" />
+        <br> <br>
+        <label for="name">Artiste :</label>
+        <input type="text" name="artiste" id="Artiste" />
+        <br> <br>
+        <label for="name">Label:</label>
+        <input type="text" name="label" id="Label" />
+        <br> <br>
+        <label for="name">Année Parution:</label>
+        <input type="text" name="anneePar" id="Annee" />
+        <br> <br>
+        <label for="name">Genre:</label>
+        <input type="text" name="genre" id="Genre" />
+        <br> <br>
+        <label for="name">Durée Totale:</label>
+        <input type="text" name="dureeTot" id="Duree" />
+        <br> <br>
+        <input type="submit" id="Enregistrer" value="enregistrer" />
+    </form>
 </body>
 
 </html>

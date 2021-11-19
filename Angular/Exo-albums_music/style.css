@@ -1,3 +1,28 @@
-ul {
-  list-style: none;
+#groupes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.albums {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 25%;
+  border: black solid 1px;
+  margin: 20px;
+}
+
+img {
+  width: 130%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.blocTexte {
+  width: 220px;
+  padding-left: 30px;
+  margin: 8px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
 }
