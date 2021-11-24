@@ -74,11 +74,6 @@ function supprimerAlbum(e) {
   document.getElementById(`divAlbum-${e.target.dataset.id}`).remove();
 }
 
-// supprime l'album rajouter zz top
-function supprimerAlbum(e) {
-  document.getElementById(`divAlbum-${e.target.dataset.id}`).remove();
-}
-
 function ajouterAlbum(album) {
   document.querySelector("#groupes").insertAdjacentHTML(
     "beforeend",
