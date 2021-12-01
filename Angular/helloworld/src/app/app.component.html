@@ -1,0 +1,30 @@
+<!-- <h1 *ngFor="let p of tabPrenoms">Bonjour {{p}}</h1> -->
+
+<!-- <h1>Bonjour {{roger.nom}} - {{roger.prenom}} - {{roger.dateNaissance | date}}</h1>
+<h1>Bonjour {{bernard.nom}} - {{bernard.prenom}} - {{roger.dateNaissance | date}}</h1> -->
+
+
+<!-- <h1 *ngFor="let p of tabPersonne">Bonjour {{p.nom}}</h1> -->
+
+
+<!-- <app-miniature-personne [personne]="roger"></app-miniature-personne>
+<app-miniature-personne [personne]="jean"></app-miniature-personne>
+<app-miniature-personne [personne]="amina"></app-miniature-personne>
+<app-miniature-personne [personne]="thomas"></app-miniature-personne> -->
+
+<div class="maClasse">
+    <app-miniature-personne *ngFor="let p of tabPersonne" [personne]="p" (deleteMe)="suppPersonne(p)">
+    </app-miniature-personne>
+</div>
+
+<h1>Angular Router App</h1>
+<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+<nav>
+    <ul>
+        <li><a routerLink="/page1" routerLinkActive="active">Page1 </a></li>
+        <li><a routerLink="/page2" routerLinkActive="active">Page2 </a></li>
+    </ul>
+</nav>
+
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>

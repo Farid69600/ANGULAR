@@ -1,0 +1,13 @@
+h1 {
+  color: blue;
+}
+
+#infoRecherche {
+  border: solid black 1px;
+  width: 350px;
+  height: 500px;
+}
+
+input #Rechercher {
+  margin-left: 50px;
+}
