@@ -12,17 +12,17 @@
 <app-miniature-personne [personne]="amina"></app-miniature-personne>
 <app-miniature-personne [personne]="thomas"></app-miniature-personne> -->
 
-<div class="maClasse">
+<!-- <div class="maClasse">
     <app-miniature-personne *ngFor="let p of tabPersonne" [personne]="p" (deleteMe)="suppPersonne(p)">
     </app-miniature-personne>
-</div>
+</div> -->
 
-<h1>Angular Router App</h1>
+<!-- <h1>Angular Router App</h1> -->
 <!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
 <nav>
     <ul>
-        <li><a routerLink="/page1" routerLinkActive="active">Page1 </a></li>
-        <li><a routerLink="/page2" routerLinkActive="active">Page2 </a></li>
+        <li><a class="p1" routerLink="/page1" routerLinkActive="active">Page1 </a></li>
+        <li><a class="p2" routerLink="/page2" routerLinkActive="active">Page2 </a></li>
     </ul>
 </nav>
 
