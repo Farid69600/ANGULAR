@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "af0b237d-ae72-4d8b-83f8-9cb99489726d"
+    "analytics": "6cf78da4-7fc1-447d-813b-1d4968a63c99"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "helloworld": {
+    "Projet-Films": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/helloworld",
+            "outputPath": "dist/Projet-Films",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -30,7 +30,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -72,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "helloworld:build:production"
+              "browserTarget": "Projet-Films:build:production"
             },
             "development": {
-              "browserTarget": "helloworld:build:development"
+              "browserTarget": "Projet-Films:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "helloworld:build"
+            "browserTarget": "Projet-Films:build"
           }
         },
         "test": {
@@ -106,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "helloworld"
+  "defaultProject": "Projet-Films"
 }
