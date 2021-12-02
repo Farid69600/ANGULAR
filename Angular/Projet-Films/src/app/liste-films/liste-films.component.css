@@ -1,5 +1,6 @@
 .listeFilms {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  justify-content: space-evenly;
 }
