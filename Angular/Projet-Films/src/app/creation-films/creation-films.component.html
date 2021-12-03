@@ -1,1 +1,19 @@
 <p>creation-films works!</p>
+
+<form (ngSubmit)="validerForm(formCreationFilms)" #formCreationFilms="ngForm">
+    <input placeholder="Saisir un nom" type="text" [(ngModel)]="nom" name="nom" required />
+    <br> <br>
+    <input placeholder="Saisir année de sortie" type="number" [(ngModel)]="anneeSortie" name="anneeSortie" required />
+    <br> <br>
+    <input placeholder="Saisir un genre" type="text" [(ngModel)]="genre" name="genre" />
+    <br> <br>
+    <input placeholder="Saisir un réalisateur" type="text" [(ngModel)]="realisateur" name="realisateur" required />
+    <br> <br>
+    <input placeholder="Saisir une durée" type="number" [(ngModel)]="duree" name="duree" />
+    <br> <br>
+    <input placeholder="Saisir une url du film" type="url" [(ngModel)]="image" name="image" />
+    <br> <br>
+
+    <input type="submit" value="Créer" [disabled]="!formCreationFilms.valid" />
+
+</form>

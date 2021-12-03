@@ -6,19 +6,17 @@ import { AppComponent } from './app.component';
 import { ListeFilmsComponent } from './liste-films/liste-films.component';
 import { CreationFilmsComponent } from './creation-films/creation-films.component';
 import { FilmComponent } from './film/film.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListeFilmsComponent,
     CreationFilmsComponent,
-    FilmComponent
+    FilmComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

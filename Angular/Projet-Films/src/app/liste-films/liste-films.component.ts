@@ -1,22 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Film } from '../models/film';
 import { FilmsService } from '../services/films.service';
 
 @Component({
   selector: 'app-liste-films',
   templateUrl: './liste-films.component.html',
-  styleUrls: ['./liste-films.component.css']
+  styleUrls: ['./liste-films.component.css'],
 })
 export class ListeFilmsComponent implements OnInit {
-
   tabFilms: Film[];
 
-  constructor(public singletonFilm : FilmsService) {
+  constructor(public singletonFilm: FilmsService) {
     this.tabFilms = this.singletonFilm.tabFilms;
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   supprimerFilm(film: Film) {
     let index = this.tabFilms.indexOf(film);
