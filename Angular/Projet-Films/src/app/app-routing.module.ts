@@ -4,13 +4,14 @@ import { CreationFilmsComponent } from './creation-films/creation-films.componen
 import { ListeFilmsComponent } from './liste-films/liste-films.component';
 
 const routes: Routes = [
-  { path: 'liste', component: ListeFilmsComponent},
-  { path: 'creation', component: CreationFilmsComponent},
-  { path: '**', redirectTo : '/liste'}
+  { path: 'liste', component: ListeFilmsComponent },
+  { path: 'creation', component: CreationFilmsComponent },
+  { path: 'creation/:identifiant', component: CreationFilmsComponent },
+  { path: '**', redirectTo: '/liste' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
