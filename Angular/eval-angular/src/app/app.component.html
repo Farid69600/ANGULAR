@@ -3,12 +3,13 @@
   <h1>{{statJeu.unTitre}}</h1>
 </div> -->
 
-<div *ngFor="let s of tabStat">
+
+<div *ngFor="let s of monService.tabStat">
   <app-statistique [uneStat]="s"></app-statistique>
 </div>
 
 
-
+<app-statistique *ngFor="let s of monService.tabStat" [uneStat]="s"></app-statistique>
 
 
 
