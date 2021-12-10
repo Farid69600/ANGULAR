@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Statistique } from 'models/statistique';
 
 @Component({
   selector: 'app-statistique',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./statistique.component.css'],
 })
 export class StatistiqueComponent implements OnInit {
+  @Input() uneStat!: Statistique;
   constructor() {}
 
   ngOnInit(): void {}
