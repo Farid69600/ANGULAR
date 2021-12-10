@@ -1,0 +1,9 @@
+<button (click)="login()">Démo login</button>
+
+<button (click)="getStats()">Démo get stats</button>
+
+<p *ngIf="connecte">Je suis connecté</p>
+
+<p *ngIf="!connecte">Je ne suis pas encore connecté</p>
+
+<p *ngIf="recurrence" >Récurrence : {{ recurrence | percent }}</p>
