@@ -1,22 +1,6 @@
-<!-- <div>
-  <h1>{{statFilm.unTitre}}</h1>
-  <h1>{{statJeu.unTitre}}</h1>
-</div> -->
-
-
 <div *ngFor="let s of monService.tabStat">
   <app-statistique [uneStat]="s"></app-statistique>
 </div>
 
-
-<app-statistique *ngFor="let s of monService.tabStat" [uneStat]="s"></app-statistique>
-
-
-
-<!-- <div>
-  <h1>{{statFilm.unTitre}}</h1>
-  <h1>{{statJeu.unTitre}}</h1>
-</div>
-
-<app-statistique [uneStat]="statFilm"></app-statistique>
-<app-statistique [uneStat]="statJeu"></app-statistique> -->
+<app-statistique *ngFor="let s of monService.tabStat" [uneStat]="s">
+</app-statistique>

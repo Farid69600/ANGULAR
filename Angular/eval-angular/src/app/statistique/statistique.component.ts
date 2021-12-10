@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Statistique } from 'models/statistique';
 
 @Component({
@@ -8,7 +8,19 @@ import { Statistique } from 'models/statistique';
 })
 export class StatistiqueComponent implements OnInit {
   @Input() uneStat!: Statistique;
+  monService: any;
   constructor() {}
+  @Output() maSuppression = new EventEmitter();
+
+  suppStat() {
+    this.maSuppression.emit();
+    console.log('coucou');
+  }
+
+  deleteStat(uneStat: Statistique) {
+    let index = this.monService.tabStat.indexOf(uneStat);
+    this.monService.tabStat.splice(index, 1);
+  }
 
   ngOnInit(): void {}
 }
