@@ -2,5 +2,5 @@
   <app-statistique [uneStat]="s"></app-statistique>
 </div>
 
-<app-statistique *ngFor="let s of monService.tabStat" [uneStat]="s">
+<app-statistique *ngFor="let s of monService.tabStat" [uneStat]="s" (maSuppression)="suppStat" (s)>
 </app-statistique>
